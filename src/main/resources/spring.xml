@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean name="service" class="SpringDI.Service">
-    <property name="service" ref="googleMapService"/>
-<!--    <property name="service" ref="appleMapService"/>-->
+    <bean name="service" class="SpringDI.Service">
+        <property name="service" ref="googleMapService"/>
+        <!--    <property name="service" ref="appleMapService"/>-->
 
-</bean>
+    </bean>
     <bean name="googleMapService" class="SpringDI.GoogleMapService"/>
     <bean name="appleMapService" class="SpringDI.AppleMapService"/>
 </beans>
